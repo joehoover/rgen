@@ -13,7 +13,7 @@ def get_template(template_name: str) -> str:
         return file.read()
     
 @app.command()
-def extract(template_path1: str = 'data/cog_readme_template.md', template_path2: str = 'data/replicate_readme_template.md'):
+def extract(template_path1: str = 'cog_readme_template.md', template_path2: str = 'replicate_readme_template.md'):
     templates = [get_template(template_path1), get_template(template_path2)]
     template_vars = set()
 
