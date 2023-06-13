@@ -13,6 +13,5 @@ dependencies = ["typer>=0.4.0", "pyyaml>=6.0"]
 [project.scripts]
 rgen = "rgen.rgen:app"
 
-
 [tool.setuptools.packages.find]
-where = ["rgen"]
+where = ["."]
