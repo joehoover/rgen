@@ -25,8 +25,8 @@ def extract(template_path1: str = 'cog_readme_template.md', template_path2: str 
 
 @app.command()
 def generate(input_yaml: str = 'readme.yaml', 
-             template_path1: str = 'data/cog_readme_template.md', 
-             template_path2: str = 'data/replicate_readme_template.md',
+             template_path1: str = 'cog_readme_template.md', 
+             template_path2: str = 'replicate_readme_template.md',
              output_file1: str = 'COG_README.md', 
              output_file2: str = 'REPLICATE_README.md'):
 
