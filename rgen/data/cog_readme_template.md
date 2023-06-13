@@ -1,7 +1,7 @@
 # Cog implementation of {model_name}
 [![Replicate]({replicate_url}/badge)]({replicate_url}) 
 
-{model_name} is {description}
+{description}
 
 For more information about this model, see [here]({model_info_url}).
 

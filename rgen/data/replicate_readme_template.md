@@ -1,6 +1,6 @@
 # Model Description
 
-{model_name} is {description}
+{description}
 
 For more information about this model, see [here]({model_info_url}).
 
