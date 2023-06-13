@@ -10,7 +10,20 @@ You can install RGen directly from its GitHub repository using pip:
 pip install git+https://github.com/joehoover/rgen.git
 ```
 
-# Usage
+## Quick start
+
+To use the default Cog and Replicate README templates, you can just: 
+
+1. Build a README yaml from the default Cog and Replicate README templates.
+```
+rgen extract
+```
+2. Fill out the fields in `readme.yaml`.
+
+3. Run `rgen generate`
+
+## Usage
+
 
 RGen provides a command-line interface to generate README files. It follows a two-step process:
 
