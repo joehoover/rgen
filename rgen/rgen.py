@@ -1,18 +1,17 @@
 import os
 import pkg_resources
+from pkg_resources import resource_filename
 import typer
 import yaml
 import re
 
 app = typer.Typer()
 
-def get_template(path: str):
-    if os.path.exists(path):
-        with open(path, 'r') as file:
-            return file.read()
-    else:
-        return pkg_resources.resource_string(__name__, path).decode("utf-8")
-
+def get_template(template_name: str) -> str:
+    template_path = resource_filename(__name__, f"data/{template_name}")
+    with open(template_path, 'r') as file:
+        return file.read()
+    
 @app.command()
 def extract(template_path1: str = 'data/cog_readme_template.md', template_path2: str = 'data/replicate_readme_template.md'):
     templates = [get_template(template_path1), get_template(template_path2)]
