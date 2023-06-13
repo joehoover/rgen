@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rgen"
+version = "0.1.0"
+description = "A tool to generate readme files from templates."
+authors = [{ name = "Joe Hoover" }]
+requires-python = ">=3.8"
+dependencies = ["jinja2>=3.0.3", "typer>=0.4.0", "pyyaml>=6.0"]
+
+[project.scripts]
+rgen = "rgen.rgen:app"
